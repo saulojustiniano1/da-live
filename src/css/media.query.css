@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  ul {
+    background-color: #fff;
+    flex-direction: column;
+    position: fixed;
+    left: 100%;
+    top: 5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  ul.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2rem 0;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+  .hero {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .intro-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  iframe {
+    max-width: 26rem;
+  }
+  .about {
+    text-align: center;
+  }
+  .persons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* @media screen and (max-width: 420px) {
+  .hero {
+    max-width: 330px;
+  }
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+  iframe {
+    max-width: 330px;
+  }
+} */
